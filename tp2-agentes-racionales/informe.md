@@ -56,41 +56,55 @@ Se observa que:
 - También es importante destacar que para los dirt rates de 0,4 y 0,8 el agente reflexivo en entornos mayores a 4x4 consume todas las acciones. 
 
 <p align="center">
-  <img src="images/actions_reflex.png" alt="Cantidad de acciones promedio del agente reflex" width="600"><br>
+  <img src="images/actions_reflex.png" alt="Cantidad de acciones promedio del agente reflexivo" width="600"><br>
   <b>Figura 5:</b> Promedio de acciones ejecutadas por el agente reflexivo.
+</p>
+<p align="center">
+  <img src="images/actions_random.png" alt="Cantidad de acciones promedio del agente aleatorio" width="600"><br>
+  <b>Figura 6:</b> Promedio de acciones ejecutadas por el agente aleatorio.
 </p>
 
 ---
 
 ### 3.3. Tiempo promedio de ejecución  
-La **Figura 3** indica:  
 - Ambos agentes presentan tiempos de ejecución que crecen con el tamaño del entorno.  
-- La diferencia entre agentes no es tan pronunciada en tiempo absoluto, ya que ambos ejecutan bajo el mismo marco de simulación.  
-- Sin embargo, el aleatorio necesita más pasos para lograr menor performance, lo que lo hace ineficiente en la práctica.  
+- Hay una marcada diferencia entre los tiempos de ejecución de ambos agentes, el agente aleatorio muestra tiempos de ejecución mayores a dos minutos para grandes entornos mientras que el agente reflexivo presenta tiempos menores a 14 segundos para dichos casos. 
+
 
 <p align="center">
-  <img src="times.png" alt="Tiempo promedio de ejecución" width="600"><br>
-  <b>Figura 4:</b> Tiempo promedio de ejecución de los agentes según tamaño del entorno.
+  <img src="images/times_reflex.png" alt="Tiempo promedio de ejecución del agente reflexivo" width="600"><br>
+  <b>Figura 7:</b> Tiempo promedio de ejecución del agente reflexivo según tamaño del entorno.
+</p>
+
+<p align="center">
+  <img src="images/times_random.png" alt="Tiempo promedio de ejecución del agente aleatorio" width="600"><br>
+  <b>Figura 8:</b> Tiempo promedio de ejecución del agente aleatorio según tamaño del entorno.
 </p>
 
 ---
 
 ### 3.4. Tierra total vs limpiada  
-La **Figura 4** compara la **suciedad esperada (dirt_rate × celdas)** con la **suciedad efectivamente limpiada (performance)**.  
-- El reflexivo se acerca mucho más a la curva de suciedad total, especialmente en entornos pequeños y medianos.  
-- El aleatorio limpia una fracción muy inferior de la suciedad, especialmente en entornos grandes.  
-- Esto evidencia que el reflexivo escala mejor y mantiene una cobertura superior, mientras que el aleatorio deja gran parte del entorno sucio.  
+- El agente reflexivo se acerca mucho más a la curva de suciedad total, especialmente en entornos pequeños y medianos.  
+- A medida que los entornos se hacen más grandes, la diferencia se vuelve mayor. Ninguno de los agentes se acerca a la cantidad total de tierra a limpiar.
+
 
 <p align="center">
-  <img src="dirt.png" alt="Comparación tierra total vs limpiada" width="600"><br>
-  <b>Figura 4:</b> Comparación de tierra total vs celdas limpiadas por agente.
+  <img src="images/dirt_reflex.png" alt="Comparación tierra total vs limpiada" width="600"><br>
+  <b>Figura 9:</b> Comparación de tierra total vs celdas limpiadas por agente reflexivo.
+</p>
+
+<p align="center">
+  <img src="images/dirt_random.png" alt="Comparación tierra total vs limpiada" width="600"><br>
+  <b>Figura 10:</b> Comparación de tierra total vs celdas limpiadas por agente aleatorio.
 </p>
 
 ---
 
 ## 4. Conclusiones  
-- El **agente reflexivo** supera ampliamente al **aleatorio** en todas las métricas de interés.  
-- El reflexivo logra limpiar más celdas con menos acciones, mostrando un comportamiento más eficiente y estable.  
-- El agente aleatorio solo logra desempeños aceptables en entornos pequeños y con baja suciedad, pero no escala a escenarios más grandes.  
+
+- El agente reflexivo logra limpiar más celdas con menos acciones, mostrando un comportamiento más eficiente y estable en entornos pequeños y medianos.
+- El agente aleatorio solo logra desempeños aceptables en entornos pequeños y con baja suciedad, pero no escala a escenarios más grandes.
+
+- Ambos agentes son ineficientes en entornos grandes o medianos con alto porcentaje de suciedad.
 - Los resultados confirman la importancia de **incorporar estrategias basadas en percepciones y reglas** frente a la aleatoriedad pura.  
 - Como trabajo futuro, se podrían comparar con agentes **basados en objetivos** o con **aprendizaje**, para ver si logran aún mayor eficiencia y escalabilidad.
