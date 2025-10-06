@@ -1,4 +1,4 @@
-# Informe Comparativo de Algoritmos de Búsqueda en Entornos Estocásticos
+# Informe Comparativo de Algoritmos de Búsqueda en Entornos Deterministas
 
 ## 1. Introducción
 
