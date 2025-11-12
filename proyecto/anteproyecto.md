@@ -99,8 +99,34 @@ El alcance no incluye:
   -10 por perder la ronda.
   +puntaje_normalizado por cada mano jugada.
   ```
+## **4.4. Entrenamiento**
 
----
+Siguiendo la metodología típica de Q-Learning , el agente se entrenará mediante un proceso iterativo, alternando fases de aprendizaje y prueba para observar su mejora progresiva:
+
+- Entrenamiento 1:
+
+    - 1000 episodios donde la tabla Q se actualiza dinámicamente.
+
+    - Luego, 100 episodios de testeo sin actualización (tabla Q fija).
+
+- Entrenamiento 2:
+
+  - 2000 episodios de entrenamiento.
+
+  - 200 episodios de testeo con la tabla Q fija.
+
+- Entrenamiento 3:
+
+  - 3000 episodios de entrenamiento.
+
+  - 300 episodios de testeo con la tabla Q fija.
+
+- Entrenamiento 4:
+
+  - 4000 episodios de entrenamiento.
+
+  - 400 episodios de testeo con la tabla Q fija.
+
 
 ## **5. Métricas**
 
@@ -128,7 +154,7 @@ Se utilizarán las siguientes métricas para comparar Random, Heurístico y Q-Le
      * Tasa de victoria.
      * Recompensa promedio.
 
-Las métricas se recopilarán durante múltiples ejecuciones (100–500 runs).
+Las métricas se recopilarán durante múltiples ejecuciones.
 
 ---
 
