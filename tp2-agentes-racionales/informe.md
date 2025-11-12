@@ -33,21 +33,10 @@ Se observa que:
 
 
 <p align="center">
-  <img src="images/performance_reflex.png" alt="Performance del agente reflexivo" width="600"><br>
-  <b>Figura 1:</b> Performance promedio de agente reflexivo.
+  <img src="images/performance_comparison.png" alt="Performance de los agentes" width="600"><br>
+  <b>Figura 1:</b> Performance de los agentes
 </p>
-<p align="center">
-  <img src="images/performance_reflex2.png" alt="Performance del agente reflexivo" width="600"><br>
-  <b>Figura 2:</b> Performance promedio de agente reflexivo.
-</p>
-<p align="center">
-  <img src="images/performance_random.png" alt="Performance del agente aleatorio" width="600"><br>
-  <b>Figura 3:</b> Performance promedio de agente aleatorio.
-</p>
-<p align="center">
-  <img src="images/performance_random2.png" alt="Performance del agente aleatorio" width="600"><br>
-  <b>Figura 4:</b> Performance promedio de agente aleatorio.
-</p>
+
 
 ---
 
@@ -55,14 +44,12 @@ Se observa que:
 - El agente reflexivo ejecuta una cantidad de acciones más acorde con la tarea de limpieza, mientras que el aleatorio realiza más movimientos innecesarios. 
 - También es importante destacar que para los dirt rates de 0,4 y 0,8 el agente reflexivo en entornos mayores a 4x4 consume todas las acciones. 
 
+
 <p align="center">
-  <img src="images/actions_reflex.png" alt="Cantidad de acciones promedio del agente reflexivo" width="600"><br>
-  <b>Figura 5:</b> Promedio de acciones ejecutadas por el agente reflexivo.
+  <img src="images/actions_comparison.png" alt="Acciones de los agentes" width="600"><br>
+  <b>Figura 2:</b> Acciones de los agentes
 </p>
-<p align="center">
-  <img src="images/actions_random.png" alt="Cantidad de acciones promedio del agente aleatorio" width="600"><br>
-  <b>Figura 6:</b> Promedio de acciones ejecutadas por el agente aleatorio.
-</p>
+
 
 ---
 
@@ -71,16 +58,11 @@ Se observa que:
 - Hay una marcada diferencia entre los tiempos de ejecución de ambos agentes, el agente aleatorio muestra tiempos de ejecución mayores a dos minutos para grandes entornos mientras que el agente reflexivo presenta tiempos menores a 14 segundos para dichos casos. 
 
 
-<p align="center">
-  <img src="images/times_reflex.png" alt="Tiempo promedio de ejecución del agente reflexivo" width="600"><br>
-  <b>Figura 7:</b> Tiempo promedio de ejecución del agente reflexivo según tamaño del entorno.
-</p>
 
 <p align="center">
-  <img src="images/times_random.png" alt="Tiempo promedio de ejecución del agente aleatorio" width="600"><br>
-  <b>Figura 8:</b> Tiempo promedio de ejecución del agente aleatorio según tamaño del entorno.
+  <img src="images/times_comparison.png" alt="tiempos de los agentes" width="600"><br>
+  <b>Figura 3:</b> Tiempos de los agentes
 </p>
-
 ---
 
 ### 3.4. Tierra total vs limpiada  
@@ -89,15 +71,21 @@ Se observa que:
 
 
 <p align="center">
-  <img src="images/dirt_reflex.png" alt="Comparación tierra total vs limpiada" width="600"><br>
-  <b>Figura 9:</b> Comparación de tierra total vs celdas limpiadas por agente reflexivo.
+  <img src="images/dirt_comparison_dirt0.1.png"  width="600"><br>
+  <b>Figura 4:</b> Dirt rate 0.1
 </p>
-
 <p align="center">
-  <img src="images/dirt_random.png" alt="Comparación tierra total vs limpiada" width="600"><br>
-  <b>Figura 10:</b> Comparación de tierra total vs celdas limpiadas por agente aleatorio.
+  <img src="images/dirt_comparison_dirt0.2.png"  width="600"><br>
+  <b>Figura 5:</b> Dirt rate 0.2
 </p>
-
+<p align="center">
+  <img src="images/dirt_comparison_dirt0.4.png"  width="600"><br>
+  <b>Figura 6:</b> Dirt rate 0.4
+</p>
+<p align="center">
+  <img src="images/dirt_comparison_dirt0.8.png"  width="600"><br>
+  <b>Figura 7:</b> Dirt rate 0.8
+</p>
 ---
 
 ## 4. Conclusiones  
