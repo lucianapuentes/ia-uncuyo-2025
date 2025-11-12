@@ -113,19 +113,19 @@ Siguiendo la metodología típica de Q-Learning , el agente se entrenará median
 
   - 2000 episodios de entrenamiento.
 
-  - 200 episodios de testeo con la tabla Q fija.
+  - 100 episodios de testeo con la tabla Q fija.
 
 - Entrenamiento 3:
 
   - 3000 episodios de entrenamiento.
 
-  - 300 episodios de testeo con la tabla Q fija.
+  - 100 episodios de testeo con la tabla Q fija.
 
 - Entrenamiento 4:
 
   - 4000 episodios de entrenamiento.
 
-  - 400 episodios de testeo con la tabla Q fija.
+  - 100 episodios de testeo con la tabla Q fija.
 
 
 ## **5. Métricas**
